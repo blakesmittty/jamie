@@ -1,0 +1,15 @@
+{
+    "config": {
+        "model": {
+            "path": "models/Phi-4-mini-instruct-Q4_K_M.gguf",
+            "context-length": 4096,
+            "gpu-layers": 0,
+            "sysprompt-path": "systemprompts/syspromptfunc5me.txt",
+            "print-chat": true
+        },
+        "audio": {
+            "use-mic": true,
+            "use-tts": false
+        }
+    }
+}

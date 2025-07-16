@@ -1,0 +1,4 @@
+class MCP {
+private:
+public:
+};
