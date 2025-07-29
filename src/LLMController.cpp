@@ -22,6 +22,7 @@ LLMController::LLMController(struct Config *config, AudioController *aud) {
     this->audio = aud;
     this->config = config;
     llama_backend_init();
+    // this->mcp = MCP(config?);
 
     llama_model_params modelParams = llama_model_default_params();
     modelParams.n_gpu_layers = config->nGpuLayers;

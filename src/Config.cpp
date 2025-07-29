@@ -5,6 +5,11 @@
 
 #include "Config.h"
 
+struct MCPInfo parseMCPInfo() {
+
+}
+
+
 struct Config generateConfig() {
     struct Config config;
     std::stringstream dataBuffer;
@@ -23,6 +28,10 @@ struct Config generateConfig() {
     config.printChat = jsonData.at("config").at("model").at("print-chat").get<bool>();
     config.useMic = jsonData.at("config").at("audio").at("use-mic").get<bool>();
     config.useTTS = jsonData.at("config").at("audio").at("use-tts").get<bool>();
+
+    struct MCPInfo mcpInfo = parseMCPInfo();
+    config.mcpInfo = &mcpInfo;
+
 
     return config;
 
