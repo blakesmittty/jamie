@@ -43,6 +43,7 @@
 #dirs
 build/
 models/
+ha/
 
 .env
 
